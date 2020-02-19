@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write a Program to define Arguments and return?</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+</body>
+<script>
+	function sumAll() {
+  var i;
+  var sum = 0;
+  for(i = 0; i < arguments.length; i++)//arguments
+   {
+    sum += arguments[i];
+  }
+  return sum;//return
+}
+document.getElementById("demo").innerHTML = sumAll(5,2,5,3,5);
+</script>
+</script>
+</html>

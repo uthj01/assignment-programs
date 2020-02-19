@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How is it possible to get the total number of arguments that are passed to a function?</title>
+</head>
+<body>
+
+</body>
+<script>
+	arguments.length
+</script>
+<script>
+function ArgCounter() {
+	return arguments.length;
+}
+
+ArgCounter(10); //1
+ArgCounter(); //0
+ArgCounter(10,20,30,40,50); //5
+</script>
+</html>

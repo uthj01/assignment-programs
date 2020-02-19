@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write a program that asks the user for their name and greets them with their name.</title>
+</head>
+<body>
+
+</body>
+<script>
+      var getName = prompt("What is your name? ");
+if (getName === null || !isNaN(getName)){
+
+    while (getName !== null || isNaN(getName)){
+        alert("Invalid name, please try again");
+        getName = prompt("What is your name ? ");
+        
+       if (getName !== null || isNaN(getName)){
+           document.write("Hello ", getName);
+       }
+    }
+}else {
+    document.write("Hello ", getName);
+}
+</script>
+</html>

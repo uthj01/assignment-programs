@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write a Program to define calling function in another function?</title>
+</head>
+<body>
+	<input type = "button" onclick = "secondFunction()" value = "Call Function">
+
+</body>
+<script>
+     function kanna(a, b) {
+     function square(x) { return x*x;}
+          return Math.sqrt(square(a) + square(b));
+            }
+
+
+      function secondFunction() 
+            {
+               var result;
+               result = kanna(1,2);
+               document.write ( result );
+            }
+       
+</script>
+</html>

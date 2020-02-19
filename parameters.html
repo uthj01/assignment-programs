@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write a program function with parameters?</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+</body>
+<script>
+function myFunction(x, y){
+  if (y === undefined) {
+    y = 10;
+  }  
+  return x * y;
+}
+document.getElementById("demo").innerHTML = myFunction(4);
+
+
+</script>
+</html>
